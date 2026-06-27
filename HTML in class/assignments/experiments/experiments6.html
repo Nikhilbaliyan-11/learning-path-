@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #bbb0b0;
+    }
+    form {
+      max-width: 500px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="position:relative; bottom:300px;left:100px;">Registration Form</h2>
+  <form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value;
+      const password = document.getElementById("password").value;
+
+      let isValid = true;
+
+      const namePattern = /^[A-Za-z]{6,}$/;
+      if (!namePattern.test(name)) {
+        alert("Name must contain only alphabets and be at least 6 characters long.");
+        isValid = false;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      if (!validateForm()) {
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

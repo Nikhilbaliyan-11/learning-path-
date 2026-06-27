@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+        
+          border: 1px solid black;
+          gap: 10px;
+          height: 100%;
+          grid-template-areas:"header header header"
+                               "leftaside banner rightaside"
+                               "leftaside main rightaside"
+                               "leftaside bottom rightaside"
+                               "footer footer footer";
+          
+        }
+
+       #header1{
+        text-align: center;
+        grid-area: header;
+        border: 3px solid rgb(189, 11, 11);
+        border-radius: 5px;
+        background-color: rgb(189, 11, 11);
+
+       }
+       #leftaside{
+        text-align: center;
+        grid-area: leftaside;
+        border: 3px solid rgb(156, 189, 11);
+        border-radius: 5px;
+       background-color: rgb(156, 189, 11);
+       }
+       #rightaside{
+        text-align: center;
+        grid-area: rightaside;
+        border: 3px solid rgb(189, 11, 189);
+        border-radius: 5px;
+        background-color: rgb(189, 11, 189);
+
+       }
+       #banner{
+        text-align: center;
+        grid-area: banner;
+        border: 3px solid rgb(11, 183, 189);
+        border-radius: 5px;
+        background-color: rgb(11, 183, 189);
+
+       }
+       #main{
+        text-align: center;
+        grid-area: main;
+        border: 3px solid rgb(133, 11, 189);
+        border-radius: 5px;
+        background-color: rgb(133, 11, 189);
+       }
+       #bottom{
+        text-align: center;
+        grid-area: bottom;
+        border: 3px solid rgb(133, 11, 189);
+        border-radius: 5px;
+        background-color: rgb(11, 189, 109);
+       }
+       #footer{
+        grid-area: footer;
+        border: 3px solid rgb(3, 104, 255);
+        border-radius: 5px;
+        background-color: rgb(3, 104, 255);
+        text-align: center;
+       }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header1">Header </div>
+        <div  id="leftaside">Left-side</div>
+        <div id="rightaside">Right-side</div>
+        <div id="main" >Main</div>
+        <div id="banner">Banner</div>
+        <div id="footer">Footer</div>
+    </div>
+
+   
+</body>
+</html>

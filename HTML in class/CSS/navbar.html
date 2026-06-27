@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+          
+        }
+        body , html{
+            height: 100%;
+            width: 100%;
+            background-color: #521e45;
+        }
+        nav{ display: flex;
+            justify-content: center;
+             padding-top: 20px;
+            height: 80px;
+            width:100%;
+            background-color: #10006b;
+        
+        }
+        .logo{
+            color: aliceblue;
+            margin:0 100px;
+            font-size: 35px;
+        }
+        ul { padding-left: 200px;
+            list-style-type: none;
+            display: flex;
+            gap: 30px; 
+            content: center;
+        }
+        li{
+            list-style: none;
+            line-height: 80px;
+
+        }
+        .anchor {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .anchor:hover {
+            color: #ea0808; /
+        }
+        @media(max-width:946px){
+         nav ul li a{
+                font-size: 20px;
+                    }
+       
+        .logo{
+            font-size: 20px;
+        }
+    }
+    
+    
+    
+    @media(max-width:682px){
+            nav ul li a{
+                   font-size: 20px;
+   
+                       }
+          li{
+            display: block;
+          }
+           .logo{
+               font-size: 20px;
+                }
+           }
+    </style>
+</head>
+<body>
+        <nav>
+            <label class="logo">ABES Engineering College</label>
+            <ul>
+                <li><a class="anchor" href="">Home</a> </li>
+                <li><a class="anchor" href="">About</a> </li>
+                <li><a class="anchor" href="">services</a> </li>
+                <li><a class="anchor" href="">contact</a></li>
+                <li><a class="anchor" href="">feedback</a></li>
+            </ul>
+        </nav>  
+</body>
+</html>

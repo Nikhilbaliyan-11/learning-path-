@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+
+    <div style="display: flex; align-items: center; justify-content: space-between; background-color: #f4b041; padding: 10px; height: 80px;">
+        <div class="logo">
+            <img src="logo-9.png" alt="Logo" style="height: 50px; width: 100px;">
+        </div>
+        <div style="flex-grow: 1; text-align: center;">
+            <h1 style="margin: 0;">ABES Bookstore</h1>
+        </div>
+        <div>
+            <a href="index.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Home</a>
+            <a href="login.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Login</a>
+            <a href="registration.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Registration</a>
+            <a href="catalogue.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Catalogue</a>
+            <a href="cart.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Cart</a>
+        </div>
+    </div>
+
+    <div style="display: flex; height: calc(100vh - 80px);">
+
+        <div style="width: 20%; background-color: #f8f9f9; padding: 20px; border-right: 1px solid #ccc;">
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 15px 0;">
+                    <a href="cse.html" style="text-decoration: none; color: #2980b9; font-size: 18px; font-weight: bold;">CSE</a>
+                </li>
+                <li style="margin: 15px 0;">
+                    <a href="ece.html" style="text-decoration: none; color: #2980b9; font-size: 18px; font-weight: bold;">ECE</a>
+                </li>
+                <li style="margin: 15px 0;">
+                    <a href="eee.html" style="text-decoration: none; color: #2980b9; font-size: 18px; font-weight: bold;">EEE</a>
+                </li>
+                <li style="margin: 15px 0;">
+                    <a href="civil.html" style="text-decoration: none; color: #2980b9; font-size: 18px; font-weight: bold;">CIVIL</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div style="width: 80%; padding: 40px; background-color: #f9f9f9;">
+            <h2 style="font-size: 24px; margin-bottom: 20px;">Registration Form</h2>
+            <form action="register_submit.html" method="POST" style="margin-top: 20px;">
+
+                <label for="name" style="font-size: 18px;">Name:</label><br>
+                <input type="text" id="name" name="name" style="width: 300px; padding: 10px; margin-bottom: 15px; border: 2px solid black;"><br><br>
+
+                <label for="password" style="font-size: 18px;">Password:</label><br>
+                <input type="password" id="password" name="password" style="width: 300px; padding: 10px; margin-bottom: 15px; border: 2px solid black;"><br><br>
+
+                <label for="email" style="font-size: 18px;">E-mail ID:</label><br>
+                <input type="email" id="email" name="email" style="width: 300px; padding: 10px; margin-bottom: 15px; border: 2px solid black;"><br><br>
+
+
+                <label for="phone" style="font-size: 18px;">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone" style="width: 300px; padding: 10px; margin-bottom: 15px; border: 2px solid black;"><br><br>
+
+                <label for="sex" style="font-size: 18px;">Sex:</label><br>
+                <input type="radio" id="male" name="sex" value="male" style="margin-right: 5px;"> Male
+                <input type="radio" id="female" name="sex" value="female" style="margin-left: 15px;"> Female
+                <input type="radio" id="other" name="sex" value="other" style="margin-left: 15px;"> Other<br><br>
+
+                <label for="dob" style="font-size: 18px;">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" style="width:150px ">
+                <br><br>
+
+
+                <label for="languages" style="font-size: 18px;">Languages Known:</label><br>
+                <input type="checkbox" name="languages" value="english" style="margin-right: 5px;"> English
+                <input type="checkbox" name="languages" value="telugu" style="margin-left: 15px;"> Telugu
+                <input type="checkbox" name="languages" value="hindi" style="margin-left: 15px;"> Hindi
+                <input type="checkbox" name="languages" value="tamil" style="margin-left: 15px;"> Tamil<br><br>
+
+                <label for="address" style="font-size: 18px;">Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="40" style="padding: 10px; border: 2px solid black;"></textarea><br><br>
+
+                <div style="margin-top: 20px;">
+                    <input type="submit" value="Submit" style="padding: 10px 20px; font-size: 16px; font-weight: bold; cursor: pointer; border: 2px solid black; background-color: red; color: white; margin-right: 10px;">
+                    <input type="reset" value="Reset" style="padding: 10px 20px; font-size: 16px; font-weight: bold; cursor: pointer; border: 2px solid black; background-color: white; color: red;">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

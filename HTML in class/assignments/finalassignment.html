@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+      
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #e0f2f1, #e3f2fd);
+            color: #333;
+            overflow-x: hidden;
+            background-image: url();
+        }
+
+    
+        header {
+            background: linear-gradient(to right, #004d99, #00acc1);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #e0f7fa;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            height: 100%;
+            width: 200%;
+            background: radial-gradient(circle, #ffffff33 25%, transparent 25%);
+            background-size: 50px 50px;
+            opacity: 0.1;
+            animation: moveBg 8s linear infinite;
+        }
+        @keyframes moveBg {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50px); }
+        }
+        nav {
+            background: #007acc;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 50px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            top: -20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+            background: #ffffff33;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body >
+    <header>
+        <h1>ABES Engineering College</h1>
+        <p>Welcome to the future of engineering excellence</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#departments">Departments</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    
+</body>
+</html>

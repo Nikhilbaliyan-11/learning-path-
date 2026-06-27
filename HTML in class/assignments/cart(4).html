@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+ 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-frame {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0cbaf4;
+            padding: 10px;
+            height: 80px;
+        }
+        .logo img {
+            height: 50px;
+            width: 100px;
+        }
+        .college-name h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2980b9;
+        }
+        td {
+            background-color:#8dcdf8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-frame">
+        <div class="logo">
+            <img src="logo-9.png" alt="Logo" width="50">
+        </div>
+        <div class="college-name">
+            <h1>ABES Bookstore</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+
+     <div style="display: flex; height: calc(100vh - 80px);">
+    
+        <div style="width: 20%; background-color: #f8f9f9; padding: 20px; border-right: 1px solid #ccc;">
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 15px 0;">
+                    <a href="cse.html" style="text-decoration: none; color: #2980b9; font-size: 18px; font-weight: bold;">CSE</a>
+                </li>
+                <li style="margin: 15px 0;">
+                    <a href="ece.html" style="text-decoration: none; color: #2980b9; font-size: 18px; font-weight: bold;">ECE</a>
+                </li>
+                <li style="margin: 15px 0;">
+                    <a href="eee.html" style="text-decoration: none; color: #2980b9; font-size: 18px; font-weight: bold;">EEE</a>
+                </li>
+                <li style="margin: 15px 0;">
+                    <a href="civil.html" style="text-decoration: none; color: #2980b9; font-size: 18px; font-weight: bold;">CIVIL</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div style="width: 80%; padding: 20px; background-color: #f9f9f9;">
+            <h2 style="font-size: 24px; margin-bottom: 20px;"><center>Cart</center></h2>
+<br><br><br><br> 
+
+    <table>
+        <tr>
+            <th>Book name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+        </tr>
+       
+        <tr>
+            <td>Java 2</td>
+            <td>$35.5</td>
+            <td>2</td>
+            <td>$70</td>
+        </tr>
+        <tr>
+            <td>XML Bible</td>
+            <td>$40.5</td>
+            <td>1</td>
+            <td>$40.5</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align:right; font-weight: bold;">Total Amount</td>
+            <td>$130.5</td>
+        </tr>
+    </table>
+
+</body>
+</html>

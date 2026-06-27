@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            background: url(sticking-plaster.jpg) center / cover no-repeat fixed;
+        }
+        #headerpara {
+            font-style: italic;
+            font-size: small;
+        }
+        header {
+            text-align: center;
+            margin-top: 5%;
+            font-size: large;
+        }
+        #form {
+            background-color: rgba(98, 202, 195, 0.6);
+            margin: 5% 20% 10% 20%;
+            padding: 10px;
+            font-size: small;
+        }
+        #form1head {
+            color: red;
+            font-size: medium;
+        }
+        .formpart {
+            margin-bottom: 1rem;
+            padding: 0.25rem;
+        }
+        .control {
+            display: block;
+            width: 90%;
+            padding: 0.25rem;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+        .user-experience, .usercheckbox {
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+        #comments {
+            width: 90%;
+            padding: 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.5rem;
+            resize: vertical;
+        }
+        .button-group {
+            width: 30%;
+            padding: 0.25rem;
+            background: yellow;
+            font-size: small;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            font-style: italic;
+            text-align: center;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Survey Form</h1>
+        <p id="headerpara">Thanks for your time! Please answer the following questions to help us improve our product.</p>
+    </header>
+    <div id="form">
+        <form id="survey-form">
+            <h3 id="form1head">Respondent Information</h3>
+            <div class="formpart">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" class="control" required>
+            </div>
+            <div class="formpart">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="name123@gmail.com" class="control" required>
+            </div>
+            <div class="formpart">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" placeholder="Address" class="control" required>
+            </div>
+            <div class="formpart">
+                <label for="phoneno">Phone No:</label>
+                <input type="tel" name="phoneno" id="phoneno" placeholder="Enter Your Phone No." class="control" required>
+            </div>
+            <div class="formpart">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" placeholder="Age" min="10" max="99" class="control" required>
+            </div>
+            <div class="formpart">
+                <p>What is your current experience?</p>
+                <label><input type="radio" name="user-experience" id="excellent" class="user-experience"> Excellent</label>
+                <label><input type="radio" name="user-experience" id="normal" class="user-experience"> Normal</label>
+                <label><input type="radio" name="user-experience" id="bad" class="user-experience"> Bad</label>
+            </div>
+            <div class="formpart">
+                <p>Are there any specific features or aspects you believe need improvement?</p>
+                <label><input type="checkbox" name="responsetime" id="responsetime" class="usercheckbox"> Faster Response Time</label><br>
+                <label><input type="checkbox" name="variety" id="variety1" class="usercheckbox"> More Product Variety</label><br>
+                <label><input type="checkbox" name="quality" id="quality" class="usercheckbox"> Better Product Quality</label>
+            </div>
+            <div>
+                <p>Which is your favourite book?</p>
+                <select name="most-like" id="mostlike" class="control" required>
+                    <option disabled selected value>select the favourite book</option>
+                    <option value="book1">Basic HTML & CSS</option>
+                    <option value="book2">Advanced Java</option>
+                    <option value="book3">IoT</option>
+                    <option value="book4">Cyber Security</option>
+                </select>
+            </div>
+            <div>
+                <p>Any Suggestions or Comments</p>
+                <textarea name="comments" id="comments" placeholder="Enter your comment here..." required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="button-group">Submit</button>
+                <button type="reset" class="button-group">Reset</button>
+            </div>
+        </form>
+    </div>
+    <footer>Thanks For Your Precious Time!</footer>
+</body>
+</html>

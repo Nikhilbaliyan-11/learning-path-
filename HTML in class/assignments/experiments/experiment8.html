@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Web Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('exp8.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            background-image: url('exp8.2.jpg');
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 80%;
+            max-width: 900px;
+            margin: 20px 0;
+            padding: 30px;
+            background-image: url('exp8..jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border-radius: 8px;
+            color: #f5f5f5;
+            box-sizing: border-box;
+        }
+
+        p {
+            font-family: 'Verdana', sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            color: #f5f5f5;
+        }
+
+        a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #ffcc00;
+            text-decoration: underline;
+        }
+
+        .btn {
+            font-family: 'Verdana', sans-serif;
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffcc00;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Styled Web Page</h1>
+    </header>
+
+    <section>
+        <p>This is a simple webpage designed using CSS. The page features different fonts, background images, and interactive elements.</p>
+        <p>Click the button below to see more content:</p>
+        <button class="btn">Click Me</button>
+        <p>Learn more at <a href="https://www.example.com" target="_blank"> Website</a></p>
+    </section>
+</body>
+</html>

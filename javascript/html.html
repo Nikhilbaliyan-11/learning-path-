@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        this a program for printing the largest integers  among the three.
+    </p>
+<script>
+    
+    let a = parseInt(prompt("Enter a value for variable a:"));
+    let b = parseInt(prompt("Enter a value for variable b:"));
+    let c = parseInt(prompt("Enter a value for variable c:"));
+    let largest;
+
+    if (a > b && a > c) {
+        largest = a;
+    } else if (b > c) {
+        largest = b;
+    } else {
+        largest = c;
+    }
+    document.write(`<p>The largest integer among ${a}, ${b}, and ${c} is: ${largest}</p>`);
+
+   
+    let num = parseInt(prompt("Enter the number up to which you want to calculate the sum:"));
+    let sum = 0;
+
+    for (let i = 1; i <= num; i++) {
+        sum += i;
+    }
+    document.write(`<p>The sum of numbers from 1 to ${num} is: ${sum}</p>`);
+</script>
+    
+</script>
+   
+</body>
+</html>

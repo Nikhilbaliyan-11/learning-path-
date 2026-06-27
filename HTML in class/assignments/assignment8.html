@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .div1{
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            text-align: center;
+            background-color: rgb(215, 250, 234);
+        }
+        .div2{
+           
+            border-width: 1px;
+            background-color: rgb(215, 250, 234);
+            position:relative;
+            top:10px;
+        }
+    </style>
+
+</head>
+<body style="background-color: blanchedalmond;">
+    <div class="div1"> 
+<h1>
+    BOOKSTORE SURVEY FORM
+</h1>
+    </div>
+    <div class="div2">
+       
+<center>   <h2> <label  for="name">Name</label> <br> </h2>  </center>
+        <div style="position: relative;top:22px;"  class="div2">
+            <pre><p> First Name</p></pre> 
+           
+            <input  type="text" id="name" name="name"> 
+           <div style="position:relative;left:200px;bottom:57px;" > 
+         <label for="SECOND name">Second Name</label> <br><br>
+         <input type="text" name="SECOND name" id="SECOND name" >
+           </div>
+           <div style="position:relative;left:400px;bottom:114px;">
+            <label for="SECOND name">Last Name</label> <br><br>
+         <input type="text" name="SECOND name" id="SECOND name" >
+           </div>
+        </div>
+       
+        <input style="align-self:baseline;" type="text" id="name" name="name">
+    </div>
+    <div class="div2"> 
+        <h3><center>Gender</center></h3><br>
+        <label for="male">Male</label>
+                        <input type="checkbox" id="male" name="male"> <br>
+                        <label for="female">Female</label>
+                        <input type="checkbox" id="female" name="female">              
+    </div>
+    <div class="div2">
+        <H3><center>Address</center></H3>
+        <textarea name="c" id="c"></textarea>
+    </div>
+    <div class="div2">
+        <H3><center>contact number</center></H3>
+        <label for="mobile number">Mobile Number:</label> <br><br>
+         <input type="text" name="SECOND name" id="mobile number" >
+         <div style="position:relative;left:200px;bottom:57px;" > 
+            <label for="SECOND name">Email ID:</label> <br><br>
+            <input type="text" name="SECOND name" id="SECOND name" >
+              </div>
+    </div>
+    <div class="div2">
+
+        <h3><center> Book Preferences</center></h3>
+<p>What types of books do you typically look for? </p>
+        <input type="checkbox" name="Fiction" id="Fiction">
+        <label for="Fiction">Fiction</label>
+         <br>
+
+        <input type="checkbox" name="Non-fiction" id="Non-fiction">
+        <label for="Non-fiction">Non-fiction</label>
+         <br>
+
+
+        <input type="checkbox" name="Children's books, Sci-Fi/Fantasy" id="Children's books, Sci-Fi/Fantasy">
+        <label for="Children's books, Sci-Fi/Fantasy">Children's books, Sci-Fi/Fantasy</label>
+         <br>
+
+        <input type="checkbox" name="Mystery" id="Mystery">
+        <label for="Mystery">Mystery</label>
+        <br>
+        <input type="checkbox" name="Graphic novels" id="Graphic novels">
+        <label for="Graphic novels">Graphic novels</label>
+        <br>
+<li>
+    <label for="Other (please specify)">Other (please specify)</label>
+    <input type="text-area" name="Other (please specify)" id="Other (please specify)"> <br></li>
+
+    </div>
+    <div class="div2">
+        <h3><center>Store Experience </center></h3>
+<p>How would you rate the organization of our bookstore?</p>     
+<input type="checkbox" name="Very organized" id="Very organized">
+<label for="Very organized">Very organized</label>
+ <br>
+ <input type="checkbox" name="Somewhat organized" id="Somewhat organized">
+ <label for="Somewhat organized">Somewhat organized</label>
+  <br>
+  <input type="checkbox" name="Needs improvement" id="Needs improvement">
+<label for="Needs improvement">Needs improvement</label>
+ <br>
+
+ <input type="checkbox" name="Very disorganized" id="Very disorganized">
+<label for="Very disorganized">Very disorganized</label>
+ <br>
+
+
+    </div>
+    <div class="div2">
+        <label>How often do you visit our bookstore?</label><br>
+        <input type="radio" id="daily" name="visit-frequency" value="daily" required>
+        <label for="daily">Daily</label><br>
+        <input type="radio" id="weekly" name="visit-frequency" value="weekly">
+        <label for="weekly">Weekly</label><br>
+        <input type="radio" id="monthly" name="visit-frequency" value="monthly">
+        <label for="monthly">Monthly</label><br>
+        <input type="radio" id="occasionally" name="visit-frequency" value="occasionally">
+        <label for="occasionally">Occasionally</label><br>
+        <input type="radio" id="first-time" name="visit-frequency" value="first-time">
+        <label for="first-time">First-time visitor</label>
+   
+    <div class="div2">
+        <label>How would you rate the organization of our bookstore?</label><br>
+        <input type="radio" id="very-organized" name="organization" value="very-organized" required>
+        <label for="very-organized">Very organized</label><br>
+        <input type="radio" id="somewhat-organized" name="organization" value="somewhat-organized">
+        <label for="somewhat-organized">Somewhat organized</label><br>
+        <input type="radio" id="needs-improvement" name="organization" value="needs-improvement">
+        <label for="needs-improvement">Needs improvement</label><br>
+        <input type="radio" id="very-disorganized" name="organization" value="very-disorganized">
+        <label for="very-disorganized">Very disorganized</label>
+    </div>
+    <div class="div2">
+        <label>Did you find the books you were looking for today?</label><br>
+        <input type="radio" id="found-yes" name="found-books" value="yes" required>
+        <label for="found-yes">Yes</label><br>
+        <input type="radio" id="found-partially" name="found-books" value="partially">
+        <label for="found-partially">Partially</label><br>
+        <input type="radio" id="found-no" name="found-books" value="no">
+        <label for="found-no">No</label>
+    </div>
+    <div class="div2">
+        <label for="staff-help">How satisfied are you with the helpfulness of our staff?</label><br>
+        <input type="radio" id="very-satisfied" name="staff-help" value="very-satisfied" required>
+        <label for="very-satisfied">Very satisfied</label><br>
+        <input type="radio" id="satisfied" name="staff-help" value="satisfied">
+        <label for="satisfied">Satisfied</label><br>
+        <input type="radio" id="neutral" name="staff-help" value="neutral">
+        <label for="neutral">Neutral</label><br>
+        <input type="radio" id="dissatisfied" name="staff-help" value="dissatisfied">
+        <label for="dissatisfied">Dissatisfied</label><br>
+        <input type="radio" id="very-dissatisfied" name="staff-help" value="very-dissatisfied">
+        <label for="very-dissatisfied">Very dissatisfied</label>
+    </div> <br><br><br><br>
+   <center> <div class="div2">
+    <button type="submit">Submit Survey</button>
+</div></center>
+</div> <br>
+</body>
+</html>

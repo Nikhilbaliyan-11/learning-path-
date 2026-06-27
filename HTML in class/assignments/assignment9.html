@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABES Engineering College</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #e0f2f1, #e3f2fd);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #004d99, #00acc1);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #e0f7fa;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            height: 100%;
+            width: 200%;
+            background: radial-gradient(circle, #ffffff33 25%, transparent 25%);
+            background-size: 50px 50px;
+            opacity: 0.1;
+            animation: moveBg 8s linear infinite;
+        }
+        @keyframes moveBg {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50px); }
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #007acc;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 50px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            top: -20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+            background: #ffffff33;
+            transform: scale(1.1);
+        }
+
+        /* Main Content */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 25px;
+        }
+
+        /* Card Styling */
+        .card {
+            background: #fff;
+            width: 300px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 100 100px 200px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: all 0.4s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-10px) rotate(1deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        }
+        .card h2 {
+            font-size: 1.6em;
+            color: #007acc;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #007acc;
+            font-weight: bold;
+            border-radius: 20px;
+            background-color: #e1f5fe;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .card a:hover {
+            background-color: #007acc;
+            color: #fff;
+        }
+
+
+        .about, .departments, .admissions, .contact {
+            padding: 40px 20px;
+            background-color: #e3f2fd;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .about h2, .departments h2, .admissions h2, .contact h2 {
+            color: #004d99;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Animated Button */
+        .apply-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background: linear-gradient(to right, #ffb74d, #ff8a65);
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .apply-button:hover {
+            background: linear-gradient(to right, #ff8a65, #ffb74d);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #004d99;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 50px 50px 0 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ABES Engineering College</h1>
+        <p>Welcome to the future of engineering excellence</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#departments">Departments</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Main Content Section with Cards -->
+    <div class="content">
+        <div class="card">
+            <h2>About Us</h2>
+            <p>Discover more about our legacy, vision, and mission to provide high-quality education.</p>
+            <a href="#about">Learn More</a>
+        </div>
+
+        <div class="card">
+            <h2>Departments</h2>
+            <p>Explore our specialized engineering departments, including Computer Science, Electrical, and more.</p>
+            <a href="#departments">Explore Departments</a>
+        </div>
+
+        <div class="card">
+            <h2>Admissions</h2>
+            <p>Get information on our admission process, eligibility criteria, and application deadlines.</p>
+            <a href="#admissions">Apply Now</a>
+        </div>
+    </div>
+
+    <!-- Detailed Sections -->
+    <section id="about" class="about">
+        <h2>About ABES Engineering College</h2>
+        <p>Founded in 2000, ABES Engineering College is a prestigious institution committed to providing quality education in engineering and technology. Our mission is to nurture skilled professionals who will contribute positively to society. With state-of-the-art infrastructure and experienced faculty, we provide a learning environment that fosters innovation and research.</p>
+    </section>
+
+    <section id="departments" class="departments">
+        <h2>Our Departments</h2>
+        <p>ABES Engineering College offers a variety of engineering courses in fields such as Computer Science, Electronics and Communication, Electrical Engineering, Mechanical Engineering, and Civil Engineering. Each department is equipped with modern labs, research facilities, and dedicated faculty to guide students towards excellence.</p>
+    </section>
+
+    <section id="admissions" class="admissions">
+        <h2>Admissions Process</h2>
+        <p>Our admissions process is straightforward and transparent. Prospective students can apply online, and admissions are granted based on academic performance and entrance exams. Join us to embark on a transformative educational journey at ABES Engineering College.</p>
+        <a href="#apply" class="apply-button">Apply Now</a>
+    </section>
+
+
+<section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>ABES Engineering College<br> 19th KM Stone, NH-24, Vijay Nagar, Ghaziabad, Uttar Pradesh - 201009<br>Phone: +91 1234 567 890<br>Email: info@abes.ac.in</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ABES Engineering College. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

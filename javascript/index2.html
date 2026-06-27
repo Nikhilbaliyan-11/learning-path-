@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+
+
+
+<body>
+    <div id="result" style="font-size: 20px; font-weight: bold; margin: 20px;"></div>
+    
+    <script>
+        // Example of conditional operator
+        let student = {
+            firstname: 'Ram',
+            lastname: 'Kumar',
+            age: 19,
+            percentage: function() {
+            return 95; // Assuming a valid percentage value
+            },
+            toString: function() {
+            return `Name: ${this.firstname} ${this.lastname}, Age: ${this.age}, Percentage: ${this.percentage()}%`;
+            }
+        };
+        console.log(student.toString());
+
+
+
+
+        
+
+        // const age = 18;
+        // const message = age >= 18 ? "You are eligible to vote." : "You are not eligible to vote.";
+        // document.getElementById('result').textContent = message;
+    </script>
+</body>
+</html>

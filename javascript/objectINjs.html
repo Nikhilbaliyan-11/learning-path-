@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">                                                                                            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+   
+ student = {
+    subject:['hindi','english','science','maths'],
+    firstName: "Ram",
+    lastName: "Kumar",
+    rollno: 121
+};
+student.rollno = 121;
+student.contactno = 12345;
+student.emailid = "nikhil@1123";
+
+console.log(student.subject[0]); 
+console.log(student.lastName); 
+console.log(student.rollno);
+console.log(student.emailid);
+
+delete student.lastName;
+console.log(student.lastName);
+
+
+for(let check in student){
+    console.log(check);
+
+};
+for(let check in student){
+    console.log(check +':'+student[check])
+};
+
+             
+
+
+        // const person = {
+        //     firstName: "John",
+        //     lastName: "Doe",
+        //     age: 30,
+        //     fullName: function() {
+        //     return this.firstName + " " + this.lastName;
+        //     }
+        // };
+
+        // console.log("First Name:", person.firstName);
+        // console.log("Last Name:", person.lastName);
+        // console.log("Age:", person.age);
+        // console.log("Full Name:", person.fullName());
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

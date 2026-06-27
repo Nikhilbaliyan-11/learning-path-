@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 25px;
+        }
+        .div{
+            position: absolute;
+            top: 10px;
+            right: 100px;
+
+        }
+        .div2{
+            position: sticky;
+            top: 10px;
+            right: 100px;
+
+        }
+        .div1{
+            position: static;
+
+
+        }
+        .card{
+            background-color: aquamarine;
+            width: 300px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 100 100px 200px rgba(0, 0, 0, 0.15);
+            
+            text-align: center;
+            transition: all 0.4s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-10px) rotate(1deg);
+            box-shadow: 0px 15px 30px rgb(11, 0, 0,0.4);
+        }
+        .card h2{
+            font-size: 1.6em;
+            color: rgb(131, 176, 17);
+            margin-bottom: 10px;
+            display: inline-block;
+           
+        }
+
+        .card p{
+            color: rgb(112, 15, 15);
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+       
+        .card a{
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+
+
+        }
+        .card a:hover{
+            background-color: #39d80e;
+            color: rgb(7, 119, 52);
+        }
+    </style>
+</head>
+<body>
+    <div class="div3">
+        <div class="div1" style="height: 100px;width: 700px;padding: 0px; border:0px;  margin:0px;color:rgb(162, 255, 0);background-color:black;text-align:center;box-sizing:border-box"> 
+            <h1>
+                ABES Engineering College 
+            </h1>
+        
+        </div >
+       <div class="div2" style="height: 100px;width: 700px;padding: 10px; border:10px;  margin:0px;color:rgb(162, 255, 0);background-color:rgb(155, 132, 232);text-align:center;box-sizing:border-box"> 
+        <h1>
+            ABES Engineering College
+        </h1>
+    
+    </div>
+    </div>
+
+<div class="content" >
+    <div class="card"> <h2>About Us</h2>
+        <p>Discover more about our legacy, vision, and mission to provide high-quality education.</p>
+        <a href="#about">Learn More</a>        
+                    </div>
+</div>
+
+</body>
+</html>
