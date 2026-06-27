@@ -1,0 +1,9 @@
+# Ignore compiled binaries
+*.exe
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore other common junk
+*.class
+target/
